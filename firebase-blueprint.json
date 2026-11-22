@@ -1,0 +1,96 @@
+{
+  "entities": {
+    "CloudMessage": {
+      "title": "CloudMessage",
+      "description": "A single user or J.A.R.V.I.S. AI message stored under the authenticated user's conversation history.",
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "description": "Owner Firebase Auth UID."
+        },
+        "role": {
+          "type": "string",
+          "enum": ["user", "model"],
+          "description": "Sender role."
+        },
+        "text": {
+          "type": "string",
+          "description": "Message body text."
+        },
+        "actionType": {
+          "type": "string",
+          "description": "Optional detected action type."
+        },
+        "actionLabel": {
+          "type": "string",
+          "description": "Optional short action button label."
+        },
+        "actionPayload": {
+          "type": "string",
+          "description": "Optional JSON string parameters for device action."
+        },
+        "errorFlag": {
+          "type": "boolean",
+          "description": "True if this message represents a surfaced AI error."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp set via FieldValue.serverTimestamp()."
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp set via FieldValue.serverTimestamp()."
+        }
+      },
+      "required": ["userId", "role", "text", "errorFlag", "createdAt", "updatedAt"]
+    },
+    "CloudDirective": {
+      "title": "CloudDirective",
+      "description": "A tactical task or directive synchronized for the authenticated user.",
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "description": "Owner Firebase Auth UID."
+        },
+        "title": {
+          "type": "string",
+          "description": "Directive title."
+        },
+        "priority": {
+          "type": "string",
+          "enum": ["HIGH", "NORMAL", "ROUTINE"],
+          "description": "Directive priority level."
+        },
+        "completed": {
+          "type": "boolean",
+          "description": "Completion flag."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp set via FieldValue.serverTimestamp()."
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp set via FieldValue.serverTimestamp()."
+        }
+      },
+      "required": ["userId", "title", "priority", "completed", "createdAt", "updatedAt"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}/messages/{messageId}": {
+      "schema": { "$ref": "#/entities/CloudMessage" },
+      "description": "User-scoped J.A.R.V.I.S. conversation messages."
+    },
+    "/users/{userId}/directives/{directiveId}": {
+      "schema": { "$ref": "#/entities/CloudDirective" },
+      "description": "User-scoped tactical directives and reminders."
+    }
+  }
+}

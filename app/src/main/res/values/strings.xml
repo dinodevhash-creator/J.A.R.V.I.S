@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">Jarvis AI</string>
+    <string name="nav_core">Inti AI</string>
+    <string name="nav_studio">Studio</string>
+    <string name="nav_protocols">Protokol</string>
+    <string name="nav_diagnostics">Sistem</string>
+
+    <string name="jarvis_designation">J.A.R.V.I.S. // OS-9</string>
+    <string name="jarvis_subtitle">Asisten Taktis &amp; Kecerdasan Multimodal</string>
+    <string name="status_standby">SIAGA</string>
+    <string name="status_listening">MENDENGARKAN</string>
+    <string name="status_thinking">MEMPROSES</string>
+    <string name="status_speaking">BERBICARA</string>
+    <string name="status_error">GANGGUAN</string>
+
+    <string name="input_hint">Beri perintah ke J.A.R.V.I.S.…</string>
+    <string name="action_send">Kirim perintah</string>
+    <string name="action_mic">Perintah suara</string>
+    <string name="action_stop_mic">Hentikan suara</string>
+    <string name="action_attach_image">Lampirkan gambar untuk analisis visual</string>
+    <string name="action_open_camera">Buka kamera pemindai visual</string>
+    <string name="action_capture_photo">Ambil foto</string>
+    <string name="action_switch_camera">Ganti kamera</string>
+    <string name="action_close_camera">Tutup kamera</string>
+    <string name="camera_hud_title">PEMINDAI VISUAL // J.A.R.V.I.S.</string>
+    <string name="camera_permission_rationale">Izin kamera diperlukan agar J.A.R.V.I.S. dapat memindai objek secara langsung.</string>
+    <string name="action_clear_image">Hapus lampiran gambar</string>
+    <string name="action_speak_reply">Bacakan respons</string>
+    <string name="action_stop_speaking">Hentikan suara</string>
+    <string name="action_copy_reply">Salin respons</string>
+    <string name="action_execute_command">Jalankan</string>
+
+    <string name="hands_free_mode">Mode Suara Langsung</string>
+    <string name="hands_free_active">DIALOG SUARA AKTIF</string>
+    <string name="hands_free_stop">Hentikan Dialog Suara</string>
+
+    <string name="auth_welcome_title">OTORISASI KOMANDAN</string>
+    <string name="auth_welcome_subtitle">Masuk dengan akun Google Anda untuk menyinkronkan memori percakapan, direktif taktis, dan profil J.A.R.V.I.S. ke cloud.</string>
+    <string name="auth_sign_in_google">Masuk dengan Google</string>
+    <string name="auth_signing_in">Memverifikasi kredensial…</string>
+    <string name="auth_sign_out">Keluar Akun</string>
+
+    <string name="studio_title">Studio Visual AI</string>
+    <string name="studio_subtitle">Buat atau sunting gambar dengan Gemini Nano Banana 2.1</string>
+    <string name="studio_prompt_hint">Deskripsikan gambar atau instruksi suntingan…</string>
+    <string name="studio_generate_button">Buat Gambar</string>
+    <string name="studio_edit_button">Sunting Gambar Terlampir</string>
+    <string name="studio_generating">Menyintesis visual AI (30–60 detik)…</string>
+    <string name="studio_save_gallery">Simpan ke Galeri</string>
+
+    <string name="location_title">Peta &amp; Lokasi Pintar</string>
+    <string name="location_detect_button">Deteksi Lokasi</string>
+    <string name="location_open_maps">Buka di Peta</string>
+    <string name="location_permission_rationale">Izin lokasi diperlukan agar J.A.R.V.I.S. dapat memberi informasi tempat &amp; rute di sekitar Anda.</string>
+
+    <string name="briefing_title">Ringkasan Harian &amp; Pengingat</string>
+    <string name="briefing_generate_now">Buat Ringkasan Sekarang</string>
+    <string name="briefing_schedule_toggle">Pengingat Harian Terjadwal</string>
+    <string name="notification_permission_rationale">Izin notifikasi diperlukan untuk mengirim pengingat ringkasan harian J.A.R.V.I.S.</string>
+
+    <string name="quick_cmd_briefing">Ringkasan harian &amp; fokus hari ini</string>
+    <string name="quick_cmd_alarm">Setel alarm jam 06:00 pagi</string>
+    <string name="quick_cmd_protocol">Buat protokol: Tinjau target proyek</string>
+    <string name="quick_cmd_nearby">Cari tempat kopi terdekat di sekitar saya</string>
+
+    <string name="protocols_title">Protokol &amp; Direktif</string>
+    <string name="protocols_empty_title">Belum ada direktif aktif</string>
+    <string name="protocols_empty_desc">Tambahkan misi harian atau perintahkan J.A.R.V.I.S. untuk mencatat tugas taktis Anda.</string>
+    <string name="protocols_add_label">Tambah Direktif Baru</string>
+    <string name="protocols_input_hint">Judul direktif atau misi…</string>
+    <string name="protocols_add_button">Simpan</string>
+    <string name="system_tools_title">Kontrol Sistem Perangkat</string>
+
+    <string name="diagnostics_title">Diagnostik &amp; Konfigurasi</string>
+    <string name="setting_auto_speak">Suara Otomatis (TTS)</string>
+    <string name="setting_auto_speak_desc">J.A.R.V.I.S. membacakan jawaban secara otomatis</string>
+    <string name="setting_speech_rate">Kecepatan Bicara</string>
+    <string name="setting_language">Bahasa Suara &amp; Asisten</string>
+    <string name="setting_persona">Gaya Komunikasi</string>
+    <string name="setting_clear_chat">Bersihkan Log Percakapan</string>
+    <string name="mic_permission_rationale">Izin mikrofon diperlukan agar J.A.R.V.I.S. dapat mendengarkan perintah suara Anda.</string>
+    <string name="copied_to_clipboard">Teks disalin ke papan klip</string>
+</resources>
